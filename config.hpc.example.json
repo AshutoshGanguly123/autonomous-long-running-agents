@@ -9,5 +9,6 @@
   "temperature": 0.6,
   "timeout_seconds": 7200,
   "embedding_revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
-  "generation_reserve_tokens": 8192
+  "generation_reserve_tokens": 8192,
+  "seed_smiles": "CC1(C)C2CCC1(C)C(=O)C2"
 }

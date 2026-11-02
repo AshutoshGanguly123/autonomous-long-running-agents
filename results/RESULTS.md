@@ -1,25 +1,24 @@
 # Current results (compact)
 
-Source campaign archive: GuacaMol **Amlodipine MPO** (`results/amlodipine_mpo_20261025_summary.json`).
+Source: GuacaMol **Amlodipine MPO** campaign archive (`amlodipine_mpo_20261025_summary.json`).
 
-## Headline
+## Numbers
 
 | Metric | Value |
 |--------|------:|
 | Task | GuacaMol Amlodipine MPO |
-| Committed paper nodes | **49** (plus frozen/reporting) |
-| Immutable Git papers | **48** |
-| Best measured score | **0.9045** |
-| Model | Qwen3.8-27B-FP8 (HPC vLLM pins) |
+| Committed paper nodes | 49 |
+| Immutable Git papers | 48 |
+| Best **single** measured score | **0.9045** |
+| Model | Qwen3.8-27B-FP8 |
 
-Best molecules (scores) are listed in the JSON; the agent never receives the scoring formula—only measured oracle returns.
+## Caveats (intentional)
 
-## Campaign inventory
+1. **Not the official GuacaMol score.** GuacaMol averages top-1 / top-10 / top-100. We only logged the campaign’s single best molecule.
+2. **Oracle call count** is not reported in this public summary.
+3. Seed SMILES are operator-configured at `init` time (required flag/config). Do not assume a particular seed from this README.
+4. Full SQLite / Git object stores remain on HPC.
 
-`campaign_inventory.json` lists local campaign directory names from the HPC workspace (raw ledgers not published).
+## Inventory
 
-## Non-claims
-
-- Not a leaderboard submission against official GuacaMol baselines in this artifact.
-- Oracle access and seed SMILES are operator-configured; results are conditional on that setup.
-- Full SQLite ledgers / Git object stores remain on HPC for size and IP hygiene.
+`campaign_inventory.json` lists campaign directory names from the HPC workspace.

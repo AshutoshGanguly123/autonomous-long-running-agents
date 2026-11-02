@@ -29,14 +29,16 @@ def main():
             print(store.git('fsck','--full'))
             print(dumps({'sqlite':store.db.execute('PRAGMA integrity_check').fetchone()[0]}))
             return
-        from .oracle import Oracle, REFERENCE
+        from .oracle import Oracle
         oracle = Oracle(store)
         if args.command == 'init':
             if store.get('current_node'):
                 raise ValueError('Campaign already initialized; use run to resume')
             config = json.loads(Path(args.config).read_text())
             root = identity('N','root')
-            seed = args.seed_smiles or config.get('seed_smiles') or REFERENCE
+            seed = args.seed_smiles or config.get('seed_smiles')
+            if not seed:
+                raise ValueError('Pass --seed-smiles or set seed_smiles in config; no default seed')
             ev = oracle.evaluate('initialization',root,'initialization',[seed],initialization=True)[0]
             if ev['score'] is None:
                 raise ValueError('Invalid initial molecule')

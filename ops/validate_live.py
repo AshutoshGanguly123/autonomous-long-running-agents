@@ -5,7 +5,7 @@ import sys
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from tree_ai_scientist.store import Store, identity, dumps
-from tree_ai_scientist.oracle import Oracle, REFERENCE
+from tree_ai_scientist.oracle import Oracle
 from tree_ai_scientist.model import Model
 from tree_ai_scientist.search import Search
 from tree_ai_scientist.engine import Engine
@@ -14,9 +14,9 @@ project=Path(__file__).resolve().parents[1]
 store=Store(project/'runs/live-integration')
 oracle=Oracle(store)
 root=identity('N','integration-root')
-seed=oracle.evaluate('integration-init',root,'initialization',[REFERENCE],True)[0]
+seed=oracle.evaluate('integration-init',root,'initialization',['CC1(C)C2CCC1(C)C(=O)C2'],True)[0]
 store.create_node('integration-root',None,seed['smiles'])
-checks=oracle.evaluate('integration-checks',root,'infrastructure reference checks',[REFERENCE,'CCO'])
+checks=oracle.evaluate('integration-checks',root,'infrastructure reference checks',['CC1(C)C2CCC1(C)C(=O)C2','CCO'])
 store.commit(root,'Infrastructure smoke: measured reference checks',
              'Infrastructure-only record of two oracle evaluations; no chemical discovery is claimed.',
              '## Methods\nDirectly score two valid inputs.\n## Results\nSee verified ledger. '

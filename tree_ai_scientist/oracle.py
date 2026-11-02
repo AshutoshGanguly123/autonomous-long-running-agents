@@ -7,6 +7,7 @@ from rdkit import Chem, rdBase
 from rdkit.Chem import AllChem, DataStructs, rdMolDescriptors
 from .store import dumps, identity
 
+# GuacaMol Amlodipine MPO scoring target (fingerprint reference). Not a campaign seed.
 REFERENCE = r"Clc1ccccc1C2C(=C(/N/C(=C2/C(=O)OCC)COCCN)C)\C(=O)OC"
 
 

@@ -1,71 +1,55 @@
 # autonomous-long-running-agents
 
-**tree_ai_scientist** — autonomous Qwen ReAct molecular research that writes **literal Git-backed experiment papers** under a hard context ceiling.
+**tree_ai_scientist** — a ReAct molecular research agent that writes **Git-backed experiment papers** under a hard context ceiling.
 
 **Author:** Ashutosh Ganguly — AI researcher @ MBZUAI.
 
-## Decisive question
+## What it does
 
-Can a long-running ReAct agent maintain a **tree of experimental papers** (immutable Git commits + mutable SQLite ledger), expand strategies with workers, and improve a chemistry objective **without** an oracle campaign budget—only a **32,768-token** per-request ceiling?
+Keeps a tree of experimental nodes (immutable Git commits + mutable SQLite ledger), expands strategies with workers, and optimizes a black-box chemistry objective under a **32,768-token** per-request ceiling.
 
-## Claim (current campaigns)
+## Campaign snapshot (GuacaMol Amlodipine MPO)
 
-On GuacaMol **Amlodipine MPO** (archived summary):
+Archived run summary (`results/amlodipine_mpo_20261025_summary.json`):
 
 | Metric | Value |
 |--------|------:|
-| Committed nodes / papers | **49** nodes · **48** papers |
-| Best measured oracle score | **0.9045** |
-| Persistence | `ledger.sqlite` + `memory.git` (`refs/nodes/<id>`) |
+| Committed nodes / papers | **49** / **48** |
+| Best single molecule score | **0.9045** |
+| Model | Qwen3.8-27B-FP8 (local vLLM) |
 
-See [`results/RESULTS.md`](results/RESULTS.md).
+### How to read that number
 
-## Architecture (short)
+- GuacaMol’s **official** Amlodipine MPO score averages the top **1 / 10 / 100** molecules. Here we only report the **single best** measured score from the campaign ledger — not the official GuacaMol aggregate.
+- Oracle-call budgets and totals are **not** published in this artifact (ledger size / hygiene). Treat 0.9045 as an internal campaign best, not a leaderboard claim.
+- The scoring function uses a fixed target fingerprint (GuacaMol task definition). Campaign **seed SMILES must be set explicitly** (`--seed-smiles` or `seed_smiles` in config); there is no silent default to the target molecule.
 
-- **One anchor molecule per node.** Qwen chooses strategies, may dispatch workers; all worker results live in the same node’s paper.
-- **Branching** creates a new node from an evaluated molecule on a committed parent.
-- **Actions:** `search`, `read`, `compare`, `inspect_tree`, `write`, `deep_read`, `worker`, `call_oracle`, `commit_results`, `start_node`, `checkpoint`.
-- Context rollover archives the transcript and continues the same node—publication is not forced.
-- Design-before-code: [`DESIGN.md`](DESIGN.md).
+Details: [`results/RESULTS.md`](results/RESULTS.md).
 
-## Setup (HPC-oriented)
+## Architecture
+
+- One anchor molecule per node; workers write into the same node’s paper.
+- Branching creates a new node from an evaluated molecule on a committed parent.
+- Actions include search, read, compare, write, worker, call_oracle, commit_results, start_node, checkpoint.
+- Design notes: [`DESIGN.md`](DESIGN.md).
+
+## Setup
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -e .
 pytest -q
-cp config.hpc.example.json config.hpc.json   # point at local vLLM / embeddings
-python -m tree_ai_scientist init --campaign runs/campaign-v0 --config config.hpc.json
-python -m tree_ai_scientist run --campaign runs/campaign-v0
-python -m tree_ai_scientist status --campaign runs/campaign-v0
-python -m tree_ai_scientist verify --campaign runs/campaign-v0
-```
-
-Serving/ops helpers live in [`ops/`](ops/) (paths redacted in the example config). Model weights are **not** shipped.
-
-## Layout
-
-```
-tree_ai_scientist/   # package
-ops/                 # setup/serve/validate helpers
-tests/
-results/             # compact campaign metrics
-releases_meta/       # small validation receipts
-docs/
-reference_research_papers/
+cp config.hpc.example.json config.hpc.json
+python -m tree_ai_scientist init --campaign runs/demo --config config.hpc.json --seed-smiles 'CC1(C)C2CCC1(C)C(=O)C2'
+python -m tree_ai_scientist run --campaign runs/demo
 ```
 
 ## Limitations
 
-- Requires chemistry oracle + pinned LLM serving; not a laptop demo.
-- Seed molecule and oracle interface are operator-chosen; the model does not see the scoring formula.
-- Raw multi-GB run ledgers excluded from git; reproduce by re-running campaigns.
-- Dashboard excluded from this public slice.
-
-## Reference papers
-
-[`reference_research_papers/`](reference_research_papers/)
+- Needs a chemistry oracle and pinned LLM serving.
+- Not a GuacaMol leaderboard submission.
+- Raw multi-GB ledgers stay on HPC; only compact metrics are here.
 
 ## License
 
-MIT for this packaging. Upstream model / GuacaMol / tool licenses still apply.
+MIT for this packaging. Upstream model / GuacaMol licenses still apply.
