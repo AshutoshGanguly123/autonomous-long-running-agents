@@ -1,0 +1,14 @@
+[
+  {
+    "campaign": "${REPO_ROOT}/runs/campaign-v2-20261023T154100Z",
+    "time": 1792781761.7376595,
+    "stop_preexisted": false,
+    "reason": "Versioned JSON output-contract fix; preserve scientific records and both model endpoints"
+  },
+  {
+    "campaign": "${REPO_ROOT}/runs/campaign-v2-nothink-20261023T174117Z",
+    "time": 1792781761.7394564,
+    "stop_preexisted": false,
+    "reason": "Versioned JSON output-contract fix; preserve scientific records and both model endpoints"
+  }
+]

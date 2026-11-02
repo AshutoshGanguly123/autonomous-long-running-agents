@@ -1,0 +1,54 @@
+[
+  {
+    "launched": "2026-10-28T18:30:35+04:00",
+    "task": "guacamol-amlodipine-mpo",
+    "init": "PABLO first-100 GuacaMol prefix",
+    "matrix": "1-4 bases x exactly 8 strategies",
+    "random_sample": 10,
+    "host": "gpu-01",
+    "thinking": true,
+    "tmux_model": "tree-scientist-pablo-think-model",
+    "tmux_campaign": "tree-scientist-pablo-think",
+    "tmux_dashboard": "tree-scientist-pablo-think-dash",
+    "campaign": "${REPO_ROOT}/runs/amlodipine-PABLO-initialization-think-20261028T105700Z",
+    "release": "${REPO_ROOT}/releases/amlodipine-pablo-init-20261028T105500Z",
+    "gpus": {
+      "node": "gpu-01",
+      "indices": [
+        0,
+        1
+      ],
+      "tensor_parallel": 2
+    },
+    "endpoint": "http://127.0.0.1:8127/v1",
+    "dashboard": "http://127.0.0.1:8766/",
+    "log": "runs/amlodipine-PABLO-initialization-think-20261028T105700Z.log",
+    "stop": "touch runs/amlodipine-PABLO-initialization-think-20261028T105700Z/STOP"
+  },
+  {
+    "launched": "2026-10-28T18:30:35+04:00",
+    "task": "guacamol-amlodipine-mpo",
+    "init": "PABLO first-100 GuacaMol prefix",
+    "matrix": "1-4 bases x exactly 8 strategies",
+    "random_sample": 10,
+    "host": "gpu-01",
+    "thinking": false,
+    "tmux_model": "tree-scientist-pablo-nothink-model",
+    "tmux_campaign": "tree-scientist-pablo-nothink",
+    "tmux_dashboard": "tree-scientist-pablo-nothink-dash",
+    "campaign": "${REPO_ROOT}/runs/amlodipine-PABLO-initialization-nothink-20261028T105700Z",
+    "release": "${REPO_ROOT}/releases/amlodipine-pablo-init-20261028T105500Z",
+    "gpus": {
+      "node": "gpu-01",
+      "indices": [
+        2,
+        3
+      ],
+      "tensor_parallel": 2
+    },
+    "endpoint": "http://127.0.0.1:8128/v1",
+    "dashboard": "http://127.0.0.1:8767/",
+    "log": "runs/amlodipine-PABLO-initialization-nothink-20261028T105700Z.log",
+    "stop": "touch runs/amlodipine-PABLO-initialization-nothink-20261028T105700Z/STOP"
+  }
+]

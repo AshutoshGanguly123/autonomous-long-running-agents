@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+runs/
+*.sqlite
+memory.git/
+config.hpc.json
+ops/*.log
+ops/runtime-cache/
+ops/nothink/
+.DS_Store

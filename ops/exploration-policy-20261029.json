@@ -1,0 +1,12 @@
+{
+  "applied": "2026-10-29T16:36:29+0400",
+  "campaign": "${REPO_ROOT}/runs/amlodipine-PABLO-parallel4-nothink-20261029T114811Z",
+  "changes": [
+    "PERMITTED BROWSING += random_sample",
+    "CONTROLLER_BEFORE: exploration policy + random_sample docs",
+    "PLANNER: prefer >=2 distinct bases / 2x8 or 4x4",
+    "keep random_sample observations unclipped in session"
+  ],
+  "soft_reject_single_base": false,
+  "lineage_nudge": false
+}

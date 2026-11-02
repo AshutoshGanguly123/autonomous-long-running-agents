@@ -1,0 +1,50 @@
+[
+  {
+    "role": "controller",
+    "phase": "PARENT_SELECTED",
+    "thinking": true,
+    "passed": true,
+    "action": "propose_hypotheses",
+    "usage": {
+      "prompt_tokens": 2699,
+      "total_tokens": 4097,
+      "completion_tokens": 1398,
+      "prompt_tokens_details": null
+    },
+    "finish": "stop",
+    "seconds": 95.75880575180054,
+    "source_request": "model:controller:Xff48f89b0d63e096:turn:3"
+  },
+  {
+    "role": "observer",
+    "phase": "OBSERVING",
+    "thinking": true,
+    "passed": true,
+    "action": "submit_observation",
+    "usage": {
+      "prompt_tokens": 3078,
+      "total_tokens": 4396,
+      "completion_tokens": 1318,
+      "prompt_tokens_details": null
+    },
+    "finish": "stop",
+    "seconds": 89.99663138389587,
+    "source_request": "model:observer:N48211eb6e58e6f8a:turn:0"
+  },
+  {
+    "role": "reporter",
+    "phase": "REPORTING",
+    "thinking": true,
+    "passed": true,
+    "action": "submit_paper",
+    "usage": {
+      "prompt_tokens": 4126,
+      "total_tokens": 10000,
+      "completion_tokens": 5874,
+      "prompt_tokens_details": null
+    },
+    "finish": "stop",
+    "seconds": 395.7179114818573,
+    "source_request": "model:reporter:N48211eb6e58e6f8a:turn:0"
+  }
+]

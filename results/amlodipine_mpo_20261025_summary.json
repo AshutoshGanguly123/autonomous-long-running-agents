@@ -1,0 +1,98 @@
+{
+  "task": "GuacaMol Amlodipine MPO",
+  "stopped": "2026-10-25T12:47:42Z",
+  "model_servers_left_running": [
+    "127.0.0.1:8127",
+    "127.0.0.1:8128"
+  ],
+  "campaigns": [
+    {
+      "campaign": "${REPO_ROOT}/runs/campaign-v2-20261023T154100Z",
+      "thinking": true,
+      "supervisor": "stopped",
+      "exit_code": 0,
+      "nodes": {
+        "COMMITTED": 49,
+        "FROZEN": 1,
+        "REPORTING": 1
+      },
+      "expansions": {
+        "COMPLETE": 24,
+        "EXECUTING": 1
+      },
+      "papers": 48,
+      "best": [
+        {
+          "smiles": "CCOC(=O)C1=C(COCCN2CN2)NC(C)=C(C(=O)OC)C1c1ccccc1Cl",
+          "score": 0.9045340337332909,
+          "source": "C352afec19d083eda"
+        },
+        {
+          "smiles": "CCOC(=O)C1=C(COCCN2CC2)NC(C)=C(C(=O)OC)C1c1ccccc1Cl",
+          "score": 0.9045340337332909,
+          "source": "Cb066ebde13232097"
+        },
+        {
+          "smiles": "CCOC(=O)C1=C(COCCC2CC2)NC(C)=C(C(=O)OC)C1c1ccccc1Cl",
+          "score": 0.9045340337332909,
+          "source": "Cfc0ff04c94a08635"
+        },
+        {
+          "smiles": "CCOC(=O)C1=C(COCCC2CC2C)NC(C)=C(C(=O)OC)C1c1ccccc1Cl",
+          "score": 0.8944271909999159,
+          "source": "C0670a71e8fc4f436"
+        },
+        {
+          "smiles": "CCOC(=O)C1=C(COCCC2CC2F)NC(C)=C(C(=O)OC)C1c1ccccc1Cl",
+          "score": 0.8944271909999159,
+          "source": "Cf38a1e4563d6f44d"
+        }
+      ],
+      "log": "${REPO_ROOT}/runs/campaign-v2-20261023T154100Z.log"
+    },
+    {
+      "campaign": "${REPO_ROOT}/runs/campaign-v2-nothink-20261023T174117Z",
+      "thinking": false,
+      "supervisor": "stopped",
+      "exit_code": -9,
+      "nodes": {
+        "COMMITTED": 115,
+        "PLANNED": 1,
+        "PLANNING": 1
+      },
+      "expansions": {
+        "COMPLETE": 57,
+        "PLANNING_CHILDREN": 1
+      },
+      "papers": 114,
+      "best": [
+        {
+          "smiles": "CCOC(=O)C1=C(COCCN2CC2)NC(C)=C(C(=O)OC)C1c1ccccc1Cl",
+          "score": 0.9045340337332909,
+          "source": "Ca875752ecb9d9ee0"
+        },
+        {
+          "smiles": "CCOC(=O)C1=C(COCCN2CC2C)NC(C)=C(C(=O)OC)C1c1ccccc1Cl",
+          "score": 0.8944271909999159,
+          "source": "C1fe729512380b2d8"
+        },
+        {
+          "smiles": "CCOC(=O)C1=C(COCCCN2CC2)NC(C)=C(C(=O)OC)C1c1ccccc1Cl",
+          "score": 0.8894991799933214,
+          "source": "Cdca2659ae2e2655e"
+        },
+        {
+          "smiles": "CCOC(=O)C1=C(COCN2CC2)NC(C)=C(C(=O)OC)C1c1ccccc1Cl",
+          "score": 0.8854890790353708,
+          "source": "Cd587bee22d0cc819"
+        },
+        {
+          "smiles": "CCOC(=O)C1=C(COCCN2CC(C)N2)NC(C)=C(C(=O)OC)C1c1ccccc1Cl",
+          "score": 0.8798826901281197,
+          "source": "C8386b5bb042cf540"
+        }
+      ],
+      "log": "${REPO_ROOT}/runs/campaign-v2-nothink-20261023T174117Z.log"
+    }
+  ]
+}

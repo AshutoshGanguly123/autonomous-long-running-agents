@@ -1,0 +1,63 @@
+\begingroup
+\fontsize{10.5}{12}\selectfont
+\urlstyle{same}
+\setlength{\parskip}{4pt}
+\titlespacing*{\subsection}{0pt}{6pt}{2pt}
+\subsection*{Distal piperazine N-alkylation refuted for high-scoring pyridine diester scaffold}
+
+{\small\setlength{\parskip}{0pt}
+{Node: \nolinkurl{N2dac8bfd1abde760}\par}
+{Research parent: \nolinkurl{N0c05b43f5289a00a}\par}
+{Expansion: \nolinkurl{Xa8bbe7f04df1b3e3} (sibling 0)\par}
+{Hypothesis support (Qwen assessment): refuted\par}
+{Objective outcome (backend): decreased\par}
+{Parent reference: \nolinkurl{Cec74c6f32634804f} \nolinkurl{CCOC(=O)C1=C(COCCN2CCNCC2)NC(C)=C(C(=O)OC)C1c1ccccc1Cl} score 0.857143\par}
+{Plan hash: \nolinkurl{e7c6731a7f11460f55b2f4f0884065c24fe24ae666cb8a421386028055ad498e}\par}
+
+}
+\subsection*{Search gist}
+We tested whether alkylating the distal piperazine nitrogen of a high-scoring diester pyridine scaffold would beat the parent score. Two frozen single-cell strategies replaced the distal secondary amine with methyl or ethyl, leaving the diester, methyl, chlorophenyl, and ethoxy linker unchanged. Both analogs scored below the parent: the best analog reached 0.85 while the reference was 0.86. The hypothesis was therefore refuted. The result suggests the unmodified distal piperazine NH is at least as favorable as these N-alkyl changes, but the black-box objective prevents assigning the loss to hydrogen-bond donor character, basicity, lipophilicity, or sterics. Future work should preserve that NH and probe non-alkyl heteroatom or linker modifications. These findings support a more constrained follow-up.
+
+\subsection*{1. Introduction and hypothesis}
+This experiment tests a constrained follow-up to the parent observation that installing a piperazinyl side chain on the pyridine diester scaffold raised the black-box score from a lower precursor to the current campaign incumbent. The parent record could not separate whether the gain came from the piperazine ring, added basic nitrogen, lipophilicity, linker geometry, or hydrogen-bond donor capacity. A prior terminal-amine N-methyl edit was not beneficial, so this hypothesis deliberately changed a different nitrogen: the distal piperazine NH. The claim was that replacing that secondary amine with N-methyl or N-ethyl, while preserving the ethyl ester groups, methyl substituent, 4-chlorophenyl group, and ethoxy linker, would produce at least one molecule above the parent score. The challenging outcome would be that both N-alkyl analogs fail to improve, indicating that the unmodified NH is already near-optimal or that alkylation imposes a net penalty. This experiment is important because the distal piperazine nitrogen is a plausible site for tuning basicity and hydrogen-bonding without disturbing the core diester pyridine scaffold.
+
+\subsection*{2. Methods}
+Parent node \nolinkurl{N0c05b43f5289a00a} supplied the base molecule M1, canonical SMILES \nolinkurl{CCOC(=O)C1=C(COCCN2CCNCC2)NC(C)=C(C(=O)OC)C1c1ccccc1Cl}, with known evaluation \nolinkurl{Cec74c6f32634804f} and score 0.8571428571428572. The frozen matrix contained two single-candidate cells, one per strategy, under expansion \nolinkurl{Xa8bbe7f04df1b3e3} and plan hash \nolinkurl{e7c6731a7f11460f55b2f4f0884065c24fe24ae666cb8a421386028055ad498e}. Strategy S1 methylated the distal piperazine nitrogen to form the 4-methylpiperazine analog. Strategy S2 ethylated the same nitrogen to form the 4-ethylpiperazine analog. The intended comparison was local: each cell changed only the distal piperazine N-substituent relative to the base. No cache was used and no invalid cells were reported. The matrix was evaluated against the same parent reference score, so deltas directly compare each candidate with the incumbent base.
+
+\subsection*{3. Results}
+Cell M1|S1, receipt \nolinkurl{C4d3b2053276a93ad}, candidate SMILES \nolinkurl{CCOC(=O)C1=C(COCCN2CCN(C)CC2)NC(C)=C(C(=O)OC)C1c1ccccc1Cl}, status scored, score 0.848528137423857, delta versus base -0.008614719719000186. Cell M1|S2, receipt \nolinkurl{C693f7c5c084a04ce}, candidate SMILES \nolinkurl{CCOC(=O)C1=C(COCCN2CCN(CC)CC2)NC(C)=C(C(=O)OC)C1c1ccccc1Cl}, status scored, score 0.8360796171499412, delta versus base -0.02106323999291604. Both cells were completed. The best score in the matrix was 0.848528137423857 from the N-methyl analog, which remained below the reference score 0.8571428571428572. The mean score was 0.8423038772868991. The objective outcome was decreased, and no new campaign record was produced.
+
+\subsection*{4. Observation and learnings}
+Both analogs were lower than the base, refuting the claim that at least one N-alkyl distal piperazine analog would exceed the parent. The N-methyl analog lost less score than the N-ethyl analog, which is consistent with a size or lipophilicity penalty increasing from methyl to ethyl, but this interpretation is not proven because the black-box score is a single composite readout. The result supports the learning that the unmodified distal piperazine NH is at least as favorable as these two alkyl substitutions in this scaffold. The observation also suggests that the parent side chain may be sensitive to changes at the distal nitrogen, even when the edit is chemically small. It does not show that the piperazine ring itself is unnecessary, because the ring was retained in both candidates.
+
+\subsection*{5. Limitations}
+Only two scored cells were measured, with no replicates, no negative control, and no mechanistic assays. The edit simultaneously changes hydrogen-bond donor count, basicity, steric bulk, lipophilicity, and possibly conformation. Because the objective function is unknown, the score decrease cannot be causally assigned to any one property. The comparison is also local: it tests only methyl and ethyl at the distal piperazine nitrogen and does not establish whether all N-alkyl groups are unfavorable. The parent reference was carried from a prior evaluation, so the current matrix did not remeasure the base under the same run. This is acceptable for a frozen matrix but limits the ability to separate run-to-run variation from true molecular effects.
+
+\subsection*{6. Conclusion and future work}
+The distal piperazine NH should be preserved in future variants of this scaffold if the goal is to maintain the current high score. Plausible next hypotheses include testing non-alkyl modifications at the distal nitrogen, replacing the distal nitrogen with a non-basic heteroatom, or changing the ethylene linker length to probe geometry and basicity separately. Another possible direction is to test whether the proximal piperazine nitrogen or the ethylene linker contributes more to the score than the distal NH. No new test is performed in this paper.
+
+\subsection*{7. Evidence references}
+Source node \nolinkurl{N2dac8bfd1abde760}; parent \nolinkurl{N0c05b43f5289a00a}; citation \nolinkurl{Na836a77851078745}; reference evaluation \nolinkurl{Cec74c6f32634804f}; observation artifacts \nolinkurl{A36caaa5f3445bf98} and \nolinkurl{A940bde29476807f4}; receipts \nolinkurl{C4d3b2053276a93ad} and \nolinkurl{C693f7c5c084a04ce}.
+
+\subsection*{Verified matrix (backend)}
+\begin{tabularx}{\linewidth}{@{}lXrr@{}}
+\toprule
+\textbf{Cell} & \textbf{Candidate intervention} & \textbf{Score} & \textbf{Delta}\\
+\midrule
+M1|S1 & Distal $N$-methylation; scored & 0.848528 & $-0.008615$\\
+M1|S2 & Distal $N$-ethylation; scored & 0.836080 & $-0.021063$\\
+\bottomrule
+\end{tabularx}
+\smallskip
+\textbf{Receipts.} M1|S1: \nolinkurl{C4d3b2053276a93ad}; M1|S2: \nolinkurl{C693f7c5c084a04ce}. The exact canonical candidate structures were retained in the Results section and the attached source paper.
+\subsection*{Backend statistics}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}Xl>{\raggedright\arraybackslash}Xl@{}}
+\toprule
+Best score & 0.848528 & Mean score & 0.842304\\
+Cells completed / planned & 2 / 2 & Newly scored & 2\\
+Cached & 0 & Invalid & 0\\
+Reference score & 0.857143 & Delta vs. reference & $-0.008615$\\
+New campaign record & False & Objective outcome & Decreased\\
+\bottomrule
+\end{tabularx}
+\par\endgroup

@@ -1,0 +1,103 @@
+{
+  "status": "passed",
+  "purpose": "isolated formatting validation, no oracle calls or scientific campaign writes",
+  "results": [
+    {
+      "role": "controller",
+      "phase": "PARENT_SELECTED",
+      "thinking": true,
+      "passed": true,
+      "action": "propose_hypotheses",
+      "usage": {
+        "prompt_tokens": 2699,
+        "total_tokens": 4097,
+        "completion_tokens": 1398,
+        "prompt_tokens_details": null
+      },
+      "finish": "stop",
+      "seconds": 95.75880575180054,
+      "source_request": "model:controller:Xff48f89b0d63e096:turn:3"
+    },
+    {
+      "role": "observer",
+      "phase": "OBSERVING",
+      "thinking": true,
+      "passed": true,
+      "action": "submit_observation",
+      "usage": {
+        "prompt_tokens": 3078,
+        "total_tokens": 4396,
+        "completion_tokens": 1318,
+        "prompt_tokens_details": null
+      },
+      "finish": "stop",
+      "seconds": 89.99663138389587,
+      "source_request": "model:observer:N48211eb6e58e6f8a:turn:0"
+    },
+    {
+      "role": "reporter",
+      "phase": "REPORTING",
+      "thinking": true,
+      "passed": true,
+      "action": "submit_paper",
+      "usage": {
+        "prompt_tokens": 4126,
+        "total_tokens": 10000,
+        "completion_tokens": 5874,
+        "prompt_tokens_details": null
+      },
+      "finish": "stop",
+      "seconds": 395.7179114818573,
+      "source_request": "model:reporter:N48211eb6e58e6f8a:turn:0"
+    },
+    {
+      "role": "controller",
+      "phase": "PARENT_SELECTED",
+      "thinking": false,
+      "passed": true,
+      "action": "propose_hypotheses",
+      "usage": {
+        "completion_tokens": 315,
+        "prompt_tokens": 2673,
+        "prompt_tokens_details": null,
+        "total_tokens": 2988
+      },
+      "finish": "stop",
+      "seconds": 0.02441573143005371,
+      "source_request": "model:controller:Xff48f89b0d63e096:turn:4"
+    },
+    {
+      "role": "observer",
+      "phase": "OBSERVING",
+      "thinking": false,
+      "passed": true,
+      "action": "submit_observation",
+      "usage": {
+        "completion_tokens": 464,
+        "prompt_tokens": 2894,
+        "prompt_tokens_details": null,
+        "total_tokens": 3358
+      },
+      "finish": "stop",
+      "seconds": 0.015455961227416992,
+      "source_request": "model:observer:N48211eb6e58e6f8a:turn:0"
+    },
+    {
+      "role": "reporter",
+      "phase": "REPORTING",
+      "thinking": false,
+      "passed": true,
+      "action": "submit_paper",
+      "usage": {
+        "completion_tokens": 1079,
+        "prompt_tokens": 3873,
+        "prompt_tokens_details": null,
+        "total_tokens": 4952
+      },
+      "finish": "stop",
+      "seconds": 0.018135786056518555,
+      "source_request": "model:reporter:N48211eb6e58e6f8a:turn:0"
+    }
+  ],
+  "time": 1792782671.0652473
+}

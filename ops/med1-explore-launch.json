@@ -1,0 +1,26 @@
+[
+  {
+    "launched": "2026-10-25T19:26:44+04:00",
+    "search_mode": "explorative",
+    "thinking": true,
+    "campaign": "${REPO_ROOT}/runs/med1-explore-think-20261025T152200Z",
+    "release": "${REPO_ROOT}/releases/med1-explore-20261025T151900Z",
+    "endpoint": "http://127.0.0.1:8127/v1",
+    "dashboard": "http://127.0.0.1:8766/",
+    "opening_pool": 100,
+    "inject_per_expansion": 10,
+    "matrix": "4 bases x 5 strategies"
+  },
+  {
+    "launched": "2026-10-25T19:26:44+04:00",
+    "search_mode": "explorative",
+    "thinking": false,
+    "campaign": "${REPO_ROOT}/runs/med1-explore-nothink-20261025T152200Z",
+    "release": "${REPO_ROOT}/releases/med1-explore-20261025T151900Z",
+    "endpoint": "http://127.0.0.1:8128/v1",
+    "dashboard": "http://127.0.0.1:8767/",
+    "opening_pool": 100,
+    "inject_per_expansion": 10,
+    "matrix": "4 bases x 5 strategies"
+  }
+]

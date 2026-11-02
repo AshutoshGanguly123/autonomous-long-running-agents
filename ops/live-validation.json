@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "real_qwen_calls": 11,
+  "maximum_total_tokens": 19015,
+  "node": "Neefaaa045550a7a0",
+  "commit": "38bd30487233238697f59e07d3d6150998d8c97f",
+  "worker_evaluations": 15,
+  "hybrid_retrieval": "BM25+dense/RRF",
+  "best": {
+    "smiles": "CCOC(=O)C1=C(COCCN)NC(C)=C(C(=O)OC)C1c1ccccc1Cl",
+    "score": 0.36787944117144233
+  }
+}

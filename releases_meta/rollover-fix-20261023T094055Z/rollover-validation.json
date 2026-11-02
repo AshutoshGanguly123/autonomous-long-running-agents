@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "purpose": "isolated infrastructure validation; not replication evidence",
+  "real_qwen_calls": 1,
+  "model_usage": [
+    {
+      "usage": {
+        "completion_tokens": 1488,
+        "prompt_tokens": 30477,
+        "prompt_tokens_details": null,
+        "total_tokens": 31965
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "fresh_context_tokens": 2216,
+  "rollovers": 1,
+  "resumed_workspace_preserved": true,
+  "node": "N4813494d137e1631"
+}

@@ -1,0 +1,17 @@
+{
+  "launched": "2026-10-29T18:29:17+0400",
+  "campaign": "${REPO_ROOT}/runs/amlodipine-PABLO-parallel4-nothink-20261029T142851Z",
+  "release": "${REPO_ROOT}/releases/amlodipine-pablo-parallel4-20261028T161232Z",
+  "host": "gpu-01",
+  "endpoints": [
+    "http://127.0.0.1:8127/v1",
+    "http://127.0.0.1:8128/v1",
+    "http://127.0.0.1:8129/v1",
+    "http://127.0.0.1:8130/v1"
+  ],
+  "dashboard": "http://127.0.0.1:8767/",
+  "soft_orchestrator": true,
+  "lineage_wm": "root_to_parent gist + top5 molecules; full paper via deep_dive",
+  "vocab": "updated hypothesis + strategy guacamol families",
+  "exploration": "random_sample permitted; multi-base prefer; diversify parents"
+}

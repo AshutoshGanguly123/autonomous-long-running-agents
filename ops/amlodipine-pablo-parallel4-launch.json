@@ -1,0 +1,49 @@
+{
+  "launched": "2026-10-28T20:17:16+04:00",
+  "task": "guacamol-amlodipine-mpo",
+  "init": "PABLO first-100 GuacaMol prefix",
+  "thinking": false,
+  "hypotheses_per_expansion": 4,
+  "matrix": "up to 16 cells, any factorization",
+  "hypothesis_execution": "parallel",
+  "host": "gpu-01",
+  "gpus": {
+    "node": "gpu-01",
+    "groups": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ]
+    ]
+  },
+  "endpoints": [
+    "http://127.0.0.1:8127/v1",
+    "http://127.0.0.1:8128/v1",
+    "http://127.0.0.1:8129/v1",
+    "http://127.0.0.1:8130/v1"
+  ],
+  "campaign": "${REPO_ROOT}/runs/amlodipine-PABLO-parallel4-nothink-20261028T161232Z",
+  "release": "${REPO_ROOT}/releases/amlodipine-pablo-parallel4-20261028T161232Z",
+  "dashboard": "http://127.0.0.1:8767/",
+  "tmux_campaign": "tree-scientist-pablo-parallel4",
+  "tmux_models": [
+    "tree-scientist-pablo-think-model",
+    "tree-scientist-pablo-nothink-model",
+    "tree-scientist-pablo-p3-model",
+    "tree-scientist-pablo-p4-model"
+  ],
+  "log": "runs/amlodipine-PABLO-parallel4-nothink-20261028T161232Z.log",
+  "stop": "touch runs/amlodipine-PABLO-parallel4-nothink-20261028T161232Z/STOP"
+}

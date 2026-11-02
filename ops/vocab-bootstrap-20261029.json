@@ -1,0 +1,10 @@
+{
+  "applied": "2026-10-29T16:11:05+0400",
+  "campaign": "${REPO_ROOT}/runs/amlodipine-PABLO-parallel4-nothink-20261029T114811Z",
+  "release": "${REPO_ROOT}/releases/amlodipine-pablo-parallel4-20261028T161232Z",
+  "controller_hyp_block_tokens_qwen": 147,
+  "planner_strat_block_tokens_qwen": 120,
+  "budget_target": "~150 each (ceiling 200)",
+  "framing": "generic speaking vocabulary / intervention grammar; not GuacaMol or amlodipine priors",
+  "note": "Existing in-flight sessions keep old system prompts until their next fresh session; restart bounced the run process so new sessions load the lexicon."
+}

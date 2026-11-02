@@ -1,0 +1,56 @@
+{
+  "base": "${REPO_ROOT}",
+  "release": "${REPO_ROOT}/releases/json-contract-20261023T185645Z",
+  "old_release": "${REPO_ROOT}/releases/hypothesis-tree-v2-20261023T120933Z",
+  "stamp": "20261023T185645Z",
+  "python": "${REPO_ROOT}/.venv/bin/python",
+  "campaigns": [
+    {
+      "path": "${REPO_ROOT}/runs/campaign-v2-20261023T154100Z",
+      "thinking": true,
+      "tmux": "tree-scientist-v2",
+      "expected_source_identity": {
+        "__init__.py": "962fcbcaa233e1c879cb0d8a47971a08ce019f4da0133530af0ece9e99a191fd",
+        "__main__.py": "2d40344bb4a281f13aa36d82e88a360936316593255adc738048f54ac955de6a",
+        "engine.py": "fc40b50621924f2fc814bd51008d8cc5d670463e30a4f2177e6b3ce90fb693d7",
+        "model.py": "d901f2e5683f196cf4cc0164b73725cbeb052649f07e87fdf7d96b910494c6e7",
+        "oracle.py": "7ddc3277092838d7eab95a410bfeafd4747d860bf8752989173d446cada64363",
+        "prompts.py": "50e5b314cce5bd19c0335873660b0ab151458e4c07b32e93c517e6924a752ee1",
+        "recovery.py": "a0750571b1a5d4ac468b4217cba32846d925ad37b346a538f590fb3a1b65f385",
+        "search.py": "ebeb3fc1d70e5e3a6963ec6d946edabcc587c294f38423f1166fcf0dbf789a32",
+        "stats.py": "e5b871386fc839ee9f96db846b7a697271e3ddfa10793bbe3d3c3d724bc5d9f8",
+        "store.py": "ab58a8e961aa83241155e831428ec9f00c8b7f2dc9cb32d1ffa3162fc24b5864"
+      }
+    },
+    {
+      "path": "${REPO_ROOT}/runs/campaign-v2-nothink-20261023T174117Z",
+      "thinking": false,
+      "tmux": "tree-scientist-v2-nothink",
+      "expected_source_identity": {
+        "__init__.py": "962fcbcaa233e1c879cb0d8a47971a08ce019f4da0133530af0ece9e99a191fd",
+        "__main__.py": "2d40344bb4a281f13aa36d82e88a360936316593255adc738048f54ac955de6a",
+        "engine.py": "fc40b50621924f2fc814bd51008d8cc5d670463e30a4f2177e6b3ce90fb693d7",
+        "model.py": "d901f2e5683f196cf4cc0164b73725cbeb052649f07e87fdf7d96b910494c6e7",
+        "oracle.py": "7ddc3277092838d7eab95a410bfeafd4747d860bf8752989173d446cada64363",
+        "prompts.py": "50e5b314cce5bd19c0335873660b0ab151458e4c07b32e93c517e6924a752ee1",
+        "recovery.py": "a0750571b1a5d4ac468b4217cba32846d925ad37b346a538f590fb3a1b65f385",
+        "search.py": "ebeb3fc1d70e5e3a6963ec6d946edabcc587c294f38423f1166fcf0dbf789a32",
+        "stats.py": "e5b871386fc839ee9f96db846b7a697271e3ddfa10793bbe3d3c3d724bc5d9f8",
+        "store.py": "ab58a8e961aa83241155e831428ec9f00c8b7f2dc9cb32d1ffa3162fc24b5864"
+      }
+    }
+  ],
+  "new_source_identity": {
+    "store.py": "ab58a8e961aa83241155e831428ec9f00c8b7f2dc9cb32d1ffa3162fc24b5864",
+    "recovery.py": "a0750571b1a5d4ac468b4217cba32846d925ad37b346a538f590fb3a1b65f385",
+    "__init__.py": "962fcbcaa233e1c879cb0d8a47971a08ce019f4da0133530af0ece9e99a191fd",
+    "prompts.py": "dc9de2e03704733a07b0519e74f13d23a52f07e5854fd4a2b86258f9e73f168b",
+    "model.py": "69afebd030988edb0bf045dc876e5993782463faa64e5fa33eccc22e2b787e2c",
+    "engine.py": "dc5b3843ab01e5b5d31b0ce6bdc76d833c84163420f3a1dfc81afdb5a1872520",
+    "stats.py": "e5b871386fc839ee9f96db846b7a697271e3ddfa10793bbe3d3c3d724bc5d9f8",
+    "search.py": "ebeb3fc1d70e5e3a6963ec6d946edabcc587c294f38423f1166fcf0dbf789a32",
+    "action_format.py": "b24a673efb150c084500b2ab871697a35c0c35f824738e4743f137374183040a",
+    "oracle.py": "7ddc3277092838d7eab95a410bfeafd4747d860bf8752989173d446cada64363",
+    "__main__.py": "2d40344bb4a281f13aa36d82e88a360936316593255adc738048f54ac955de6a"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "node": "gpu-01",
+  "pid": 291296,
+  "time": 1793203954.206576,
+  "cards": {
+    "6": {
+      "uuid": "GPU-c0a0a118-ac90-a626-16d5-b1a700889823",
+      "pci": "00000000:C1:00.0",
+      "memory": 0,
+      "utilization": 0
+    },
+    "7": {
+      "uuid": "GPU-a333d841-10e7-c5c9-52b9-5e1ccd5fe21d",
+      "pci": "00000000:E1:00.0",
+      "memory": 0,
+      "utilization": 0
+    }
+  },
+  "scheduler": "NodeName=gpu-01 Arch=x86_64 CoresPerSocket=64  CPUAlloc=12 CPUEfctv=128 CPUTot=128 CPULoad=9.72 AvailableFeatures=(null) ActiveFeatures=(null) Gres=gpu:nvidia-rtx-5000-ada-generation:8 GresDrain=N/A GresUsed=gpu:nvidia-rtx-5000-ada-generation:1(IDX:0) NodeAddr=gpu-01 NodeHostName=gpu-01 Version=25.05.6 OS=Linux 6.12.95-ql-generic-14-12 #1 SMP PREEMPT_DYNAMIC Sat Jul  4 20:37:20 UTC 2026  RealMemory=772633 AllocMem=24576 FreeMem=709887 Sockets=2 Boards=1 MemSpecLimit=4096 State=MIXED ThreadsPerCore=1 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A Partitions=gpu  BootTime=2026-10-28T09:48:13 SlurmdStartTime=2026-10-28T09:49:46 LastBusyTime=2026-10-28T18:57:54 ResumeAfterTime=None CfgTRES=cpu=128,mem=772633M,billing=128,gres/gpu=8 AllocTRES=cpu=12,mem=24G,gres/gpu=1 CurrentWatts=0 AveWatts=0\n",
+  "command": [
+    "<local-home>/agent_memory/amemgym_hierarchy/serve-venv/bin/vllm",
+    "serve",
+    "<local-home>/agent_memory/amemgym_hierarchy/models/hf/hub/models--Qwen--Qwen3.8-27B-FP8/snapshots/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a",
+    "--served-model-name",
+    "Qwen/Qwen3.8-27B-FP8",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8130",
+    "--dtype",
+    "bfloat16",
+    "--tensor-parallel-size",
+    "2",
+    "--max-model-len",
+    "32768",
+    "--max-num-seqs",
+    "2",
+    "--gpu-memory-utilization",
+    "0.85",
+    "--enforce-eager",
+    "--disable-custom-all-reduce",
+    "--reasoning-parser",
+    "qwen3"
+  ],
+  "config": {
+    "model": "Qwen/Qwen3.8-27B-FP8",
+    "model_revision": "017b9c7af6b5689d5dd426a76e0bc077eb5ca20a",
+    "base_url": "http://127.0.0.1:8130/v1",
+    "tokenizer": "<local-home>/agent_memory/amemgym_hierarchy/models/hf/hub/models--Qwen--Qwen3.8-27B-FP8/snapshots/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a",
+    "embedding_model": "${REPO_ROOT}/models/hf/models--sentence-transformers--all-mpnet-base-v2/snapshots/e8c3b32edf5434bc2275fc9bab85f82640a19130",
+    "context_tokens": 32768,
+    "thinking": false,
+    "temperature": 0.6,
+    "timeout_seconds": 7200,
+    "embedding_revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+    "generation_reserve_tokens": 8192,
+    "task": "guacamol-amlodipine-mpo",
+    "protocol": {
+      "hypotheses_per_expansion": 2,
+      "max_base_molecules_per_hypothesis": 4,
+      "strategies_per_hypothesis": 8,
+      "candidates_per_cell": 1
+    },
+    "library": {
+      "path": "${REPO_ROOT}/data/guacamol_v1_all.smiles",
+      "initial_draw": 100,
+      "initial_mode": "prefix",
+      "resample_draw": 10,
+      "resample_mode": "random"
+    }
+  }
+}

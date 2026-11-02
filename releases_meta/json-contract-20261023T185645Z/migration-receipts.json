@@ -1,0 +1,196 @@
+[
+  {
+    "time": 1792782772.1450615,
+    "revision": "json-actions-v1",
+    "classification": "serialization-only source migration",
+    "old_release": "${REPO_ROOT}/releases/hypothesis-tree-v2-20261023T120933Z",
+    "new_release": "${REPO_ROOT}/releases/json-contract-20261023T185645Z",
+    "old_source_identity": {
+      "__init__.py": "962fcbcaa233e1c879cb0d8a47971a08ce019f4da0133530af0ece9e99a191fd",
+      "__main__.py": "2d40344bb4a281f13aa36d82e88a360936316593255adc738048f54ac955de6a",
+      "engine.py": "fc40b50621924f2fc814bd51008d8cc5d670463e30a4f2177e6b3ce90fb693d7",
+      "model.py": "d901f2e5683f196cf4cc0164b73725cbeb052649f07e87fdf7d96b910494c6e7",
+      "oracle.py": "7ddc3277092838d7eab95a410bfeafd4747d860bf8752989173d446cada64363",
+      "prompts.py": "50e5b314cce5bd19c0335873660b0ab151458e4c07b32e93c517e6924a752ee1",
+      "recovery.py": "a0750571b1a5d4ac468b4217cba32846d925ad37b346a538f590fb3a1b65f385",
+      "search.py": "ebeb3fc1d70e5e3a6963ec6d946edabcc587c294f38423f1166fcf0dbf789a32",
+      "stats.py": "e5b871386fc839ee9f96db846b7a697271e3ddfa10793bbe3d3c3d724bc5d9f8",
+      "store.py": "ab58a8e961aa83241155e831428ec9f00c8b7f2dc9cb32d1ffa3162fc24b5864"
+    },
+    "new_source_identity": {
+      "store.py": "ab58a8e961aa83241155e831428ec9f00c8b7f2dc9cb32d1ffa3162fc24b5864",
+      "recovery.py": "a0750571b1a5d4ac468b4217cba32846d925ad37b346a538f590fb3a1b65f385",
+      "__init__.py": "962fcbcaa233e1c879cb0d8a47971a08ce019f4da0133530af0ece9e99a191fd",
+      "prompts.py": "dc9de2e03704733a07b0519e74f13d23a52f07e5854fd4a2b86258f9e73f168b",
+      "model.py": "69afebd030988edb0bf045dc876e5993782463faa64e5fa33eccc22e2b787e2c",
+      "engine.py": "dc5b3843ab01e5b5d31b0ce6bdc76d833c84163420f3a1dfc81afdb5a1872520",
+      "stats.py": "e5b871386fc839ee9f96db846b7a697271e3ddfa10793bbe3d3c3d724bc5d9f8",
+      "search.py": "ebeb3fc1d70e5e3a6963ec6d946edabcc587c294f38423f1166fcf0dbf789a32",
+      "action_format.py": "b24a673efb150c084500b2ab871697a35c0c35f824738e4743f137374183040a",
+      "oracle.py": "7ddc3277092838d7eab95a410bfeafd4747d860bf8752989173d446cada64363",
+      "__main__.py": "2d40344bb4a281f13aa36d82e88a360936316593255adc738048f54ac955de6a"
+    },
+    "backup": "${REPO_ROOT}/runs/campaign-v2-20261023T154100Z/maintenance/json-actions-v1",
+    "scientific_fingerprint": "36b15dd137d971b86cf8af4223f816af97f2f0b8ae9804690359f16f47230f08",
+    "model_configuration": {
+      "base_url": "http://127.0.0.1:8127/v1",
+      "context_tokens": 32768,
+      "embedding_model": "${REPO_ROOT}/models/hf/models--sentence-transformers--all-mpnet-base-v2/snapshots/e8c3b32edf5434bc2275fc9bab85f82640a19130",
+      "embedding_revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+      "generation_reserve_tokens": 8192,
+      "model": "Qwen/Qwen3.8-27B-FP8",
+      "model_revision": "017b9c7af6b5689d5dd426a76e0bc077eb5ca20a",
+      "temperature": 0.6,
+      "thinking": true,
+      "timeout_seconds": 7200,
+      "tokenizer": "<local-home>/agent_memory/amemgym_hierarchy/models/hf/hub/models--Qwen--Qwen3.8-27B-FP8/snapshots/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a"
+    },
+    "protocol": {
+      "candidates_per_cell": 1,
+      "context_tokens": 32768,
+      "hypotheses_per_expansion": 2,
+      "hypothesis_execution": "sequential",
+      "max_base_molecules_per_hypothesis": 2,
+      "max_consecutive_invalid_turns": 8,
+      "max_repairs_per_submission": 3,
+      "strategies_per_hypothesis": 2,
+      "summary_max_tokens": 256
+    },
+    "previous_status": {
+      "failure": {
+        "message": "Invalid-output recovery exhausted in PARENT_SELECTED: JSONDecodeError: Expecting ',' delimiter: line 1 column 1580 (char 1579)",
+        "type": "PhaseFailure"
+      },
+      "phase_failure": {
+        "consecutive_errors": 8,
+        "entity": "Xd4a5120468debf09",
+        "last_error": "JSONDecodeError: Expecting ',' delimiter: line 1 column 1580 (char 1579)",
+        "phase": "PARENT_SELECTED",
+        "repairs": 0,
+        "session": "controller:Xd4a5120468debf09",
+        "time": 1792778225.796582
+      },
+      "status": {
+        "action": "propose_hypotheses",
+        "best": {
+          "score": 0.8571428571428572,
+          "smiles": "CCOC(=O)C1=C(COCCN2CCNCC2)NC(C)=C(C(=O)OC)C1c1ccccc1Cl",
+          "source": "Cec74c6f32634804f"
+        },
+        "entity": "Xd4a5120468debf09",
+        "error": null,
+        "model_usage": {
+          "completion_tokens": 637,
+          "prompt_tokens": 5347,
+          "prompt_tokens_details": null,
+          "total_tokens": 5984
+        },
+        "phase": "PARENT_SELECTED",
+        "role": "controller",
+        "session": "controller:Xd4a5120468debf09",
+        "time": 1792781709.140801,
+        "turn": 19
+      }
+    },
+    "historical_sessions_preserved": true,
+    "new_sessions": "versioned :wire:json-actions-v1 namespace",
+    "no_oracle_replay_or_frozen_plan_change": true
+  },
+  {
+    "time": 1792782773.2908225,
+    "revision": "json-actions-v1",
+    "classification": "serialization-only source migration",
+    "old_release": "${REPO_ROOT}/releases/hypothesis-tree-v2-20261023T120933Z",
+    "new_release": "${REPO_ROOT}/releases/json-contract-20261023T185645Z",
+    "old_source_identity": {
+      "__init__.py": "962fcbcaa233e1c879cb0d8a47971a08ce019f4da0133530af0ece9e99a191fd",
+      "__main__.py": "2d40344bb4a281f13aa36d82e88a360936316593255adc738048f54ac955de6a",
+      "engine.py": "fc40b50621924f2fc814bd51008d8cc5d670463e30a4f2177e6b3ce90fb693d7",
+      "model.py": "d901f2e5683f196cf4cc0164b73725cbeb052649f07e87fdf7d96b910494c6e7",
+      "oracle.py": "7ddc3277092838d7eab95a410bfeafd4747d860bf8752989173d446cada64363",
+      "prompts.py": "50e5b314cce5bd19c0335873660b0ab151458e4c07b32e93c517e6924a752ee1",
+      "recovery.py": "a0750571b1a5d4ac468b4217cba32846d925ad37b346a538f590fb3a1b65f385",
+      "search.py": "ebeb3fc1d70e5e3a6963ec6d946edabcc587c294f38423f1166fcf0dbf789a32",
+      "stats.py": "e5b871386fc839ee9f96db846b7a697271e3ddfa10793bbe3d3c3d724bc5d9f8",
+      "store.py": "ab58a8e961aa83241155e831428ec9f00c8b7f2dc9cb32d1ffa3162fc24b5864"
+    },
+    "new_source_identity": {
+      "store.py": "ab58a8e961aa83241155e831428ec9f00c8b7f2dc9cb32d1ffa3162fc24b5864",
+      "recovery.py": "a0750571b1a5d4ac468b4217cba32846d925ad37b346a538f590fb3a1b65f385",
+      "__init__.py": "962fcbcaa233e1c879cb0d8a47971a08ce019f4da0133530af0ece9e99a191fd",
+      "prompts.py": "dc9de2e03704733a07b0519e74f13d23a52f07e5854fd4a2b86258f9e73f168b",
+      "model.py": "69afebd030988edb0bf045dc876e5993782463faa64e5fa33eccc22e2b787e2c",
+      "engine.py": "dc5b3843ab01e5b5d31b0ce6bdc76d833c84163420f3a1dfc81afdb5a1872520",
+      "stats.py": "e5b871386fc839ee9f96db846b7a697271e3ddfa10793bbe3d3c3d724bc5d9f8",
+      "search.py": "ebeb3fc1d70e5e3a6963ec6d946edabcc587c294f38423f1166fcf0dbf789a32",
+      "action_format.py": "b24a673efb150c084500b2ab871697a35c0c35f824738e4743f137374183040a",
+      "oracle.py": "7ddc3277092838d7eab95a410bfeafd4747d860bf8752989173d446cada64363",
+      "__main__.py": "2d40344bb4a281f13aa36d82e88a360936316593255adc738048f54ac955de6a"
+    },
+    "backup": "${REPO_ROOT}/runs/campaign-v2-nothink-20261023T174117Z/maintenance/json-actions-v1",
+    "scientific_fingerprint": "aed31a65c544d74e4fd9251f851a3eb0462b0027c62350e848d3c1ff78fc2528",
+    "model_configuration": {
+      "base_url": "http://127.0.0.1:8128/v1",
+      "context_tokens": 32768,
+      "embedding_model": "${REPO_ROOT}/models/hf/models--sentence-transformers--all-mpnet-base-v2/snapshots/e8c3b32edf5434bc2275fc9bab85f82640a19130",
+      "embedding_revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+      "generation_reserve_tokens": 8192,
+      "model": "Qwen/Qwen3.8-27B-FP8",
+      "model_revision": "017b9c7af6b5689d5dd426a76e0bc077eb5ca20a",
+      "temperature": 0.6,
+      "thinking": false,
+      "timeout_seconds": 7200,
+      "tokenizer": "<local-home>/agent_memory/amemgym_hierarchy/models/hf/hub/models--Qwen--Qwen3.8-27B-FP8/snapshots/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a"
+    },
+    "protocol": {
+      "candidates_per_cell": 1,
+      "context_tokens": 32768,
+      "hypotheses_per_expansion": 2,
+      "hypothesis_execution": "sequential",
+      "max_base_molecules_per_hypothesis": 2,
+      "max_consecutive_invalid_turns": 8,
+      "max_repairs_per_submission": 3,
+      "strategies_per_hypothesis": 2,
+      "summary_max_tokens": 256
+    },
+    "previous_status": {
+      "failure": {
+        "message": "Invalid-output recovery exhausted in PARENT_SELECTED: JSONDecodeError: Expecting ',' delimiter: line 1 column 1795 (char 1794)",
+        "type": "PhaseFailure"
+      },
+      "phase_failure": {
+        "consecutive_errors": 8,
+        "entity": "Xa8bbe7f04df1b3e3",
+        "last_error": "JSONDecodeError: Expecting ',' delimiter: line 1 column 1795 (char 1794)",
+        "phase": "PARENT_SELECTED",
+        "repairs": 0,
+        "session": "controller:Xa8bbe7f04df1b3e3",
+        "time": 1792780570.9198654
+      },
+      "status": {
+        "action": "select_parent",
+        "best": {
+          "score": 0.848528137423857,
+          "smiles": "CCOC(=O)C1=C(COCCN2CCN(C)CC2)NC(C)=C(C(=O)OC)C1c1ccccc1Cl",
+          "source": "C4d3b2053276a93ad"
+        },
+        "entity": "Xd4a5120468debf09",
+        "error": null,
+        "model_usage": {
+          "completion_tokens": 280,
+          "prompt_tokens": 14391,
+          "prompt_tokens_details": null,
+          "total_tokens": 14671
+        },
+        "phase": "BROWSING",
+        "role": "controller",
+        "session": "controller:Xd4a5120468debf09",
+        "time": 1792781759.7441216,
+        "turn": 7
+      }
+    },
+    "historical_sessions_preserved": true,
+    "new_sessions": "versioned :wire:json-actions-v1 namespace",
+    "no_oracle_replay_or_frozen_plan_change": true
+  }
+]

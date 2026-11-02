@@ -1,0 +1,59 @@
+[
+  {
+    "campaign": "amlodipine-PABLO-initialization-nothink-20261028T105700Z"
+  },
+  {
+    "campaign": "amlodipine-PABLO-initialization-think-20261028T105700Z"
+  },
+  {
+    "campaign": "amlodipine-PABLO-parallel4-nothink-20261028T161232Z"
+  },
+  {
+    "campaign": "amlodipine-PABLO-parallel4-nothink-20261028T200145Z"
+  },
+  {
+    "campaign": "amlodipine-PABLO-parallel4-nothink-20261029T114811Z"
+  },
+  {
+    "campaign": "amlodipine-PABLO-parallel4-nothink-20261029T142851Z"
+  },
+  {
+    "campaign": "campaign-v0"
+  },
+  {
+    "campaign": "campaign-v1-replica-20261023T094055Z"
+  },
+  {
+    "campaign": "campaign-v2-20261023T154100Z"
+  },
+  {
+    "campaign": "campaign-v2-nothink-20261023T174117Z"
+  },
+  {
+    "campaign": "campaign-v2-papers"
+  },
+  {
+    "campaign": "live-integration"
+  },
+  {
+    "campaign": "med1-explore-nothink-20261025T152200Z"
+  },
+  {
+    "campaign": "med1-explore-think-20261025T152200Z"
+  },
+  {
+    "campaign": "med1-nothink-20261025T124742Z"
+  },
+  {
+    "campaign": "med1-pool-nothink-20261025T145100Z"
+  },
+  {
+    "campaign": "med1-pool-think-20261025T145100Z"
+  },
+  {
+    "campaign": "med1-think-20261025T124742Z"
+  },
+  {
+    "campaign": "tokenizer-probe"
+  }
+]

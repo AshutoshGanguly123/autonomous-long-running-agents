@@ -1,0 +1,5 @@
+{
+  "stopped_requested": 1792748223.563221,
+  "reason": "User requested fresh replication after rollover and supervisor fixes",
+  "campaign": "runs/campaign-v0"
+}

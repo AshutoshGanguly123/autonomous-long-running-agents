@@ -1,0 +1,32 @@
+[
+  {
+    "port": 8127,
+    "thinking": true,
+    "passed": true,
+    "seconds": 12.981844663619995,
+    "usage": {
+      "prompt_tokens": 113,
+      "total_tokens": 259,
+      "completion_tokens": 146,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "text": "{\n  \"reason\": \"The user requested a formatting-test checkpoint without discussing molecules.\",\n  \"action\": \"checkpoint\",\n  \"args\": {\n    \"note\": \"Formatting test only.\"\n  }\n}",
+    "reasoning_characters": 450
+  },
+  {
+    "port": 8128,
+    "thinking": false,
+    "passed": true,
+    "seconds": 5.55046010017395,
+    "usage": {
+      "prompt_tokens": 77,
+      "total_tokens": 118,
+      "completion_tokens": 41,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "text": "{\n  \"reason\": \"Formatting test only\",\n  \"action\": \"checkpoint\",\n  \"args\": {\n    \"note\": \"Formatting test only\"\n  }\n}",
+    "reasoning_characters": 0
+  }
+]

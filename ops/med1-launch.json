@@ -1,0 +1,48 @@
+[
+  {
+    "launched": "2026-10-25T16:51:51+04:00",
+    "task": "guacamol-med1",
+    "objective": "Geometric mean of ECFP4 Tanimoto similarity to camphor and menthol. Targets are not in the agent prompt.",
+    "targets": {
+      "camphor": "CC1(C)C2CCC1(C)C(=O)C2",
+      "menthol": "CC(C)C1CCC(C)CC1O"
+    },
+    "seed": {
+      "role": "camphor",
+      "smiles": "CC12CCC(CC1=O)C2(C)C",
+      "score": 0.4
+    },
+    "host": "gpu-01",
+    "thinking": true,
+    "tmux": "tree-scientist-med1",
+    "campaign": "${REPO_ROOT}/runs/med1-think-20261025T124742Z",
+    "release": "${REPO_ROOT}/releases/med1-20261025T124742Z",
+    "endpoint": "http://127.0.0.1:8127/v1",
+    "dashboard": "http://127.0.0.1:8766/",
+    "log": "runs/med1-think-20261025T124742Z.log",
+    "stop": "touch runs/med1-think-20261025T124742Z/STOP"
+  },
+  {
+    "launched": "2026-10-25T16:51:51+04:00",
+    "task": "guacamol-med1",
+    "objective": "Geometric mean of ECFP4 Tanimoto similarity to camphor and menthol. Targets are not in the agent prompt.",
+    "targets": {
+      "camphor": "CC1(C)C2CCC1(C)C(=O)C2",
+      "menthol": "CC(C)C1CCC(C)CC1O"
+    },
+    "seed": {
+      "role": "camphor",
+      "smiles": "CC12CCC(CC1=O)C2(C)C",
+      "score": 0.4
+    },
+    "host": "gpu-01",
+    "thinking": false,
+    "tmux": "tree-scientist-med1-nothink",
+    "campaign": "${REPO_ROOT}/runs/med1-nothink-20261025T124742Z",
+    "release": "${REPO_ROOT}/releases/med1-20261025T124742Z",
+    "endpoint": "http://127.0.0.1:8128/v1",
+    "dashboard": "http://127.0.0.1:8767/",
+    "log": "runs/med1-nothink-20261025T124742Z.log",
+    "stop": "touch runs/med1-nothink-20261025T124742Z/STOP"
+  }
+]

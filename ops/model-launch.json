@@ -1,0 +1,57 @@
+{
+  "node": "gpu-01",
+  "pid": 2681623,
+  "time": 1792698474.240038,
+  "cards": {
+    "1": {
+      "uuid": "GPU-28306e01-bf49-bf05-b680-9b531d53c1d7",
+      "pci": "00000000:21:00.0",
+      "memory": 0,
+      "utilization": 0
+    },
+    "2": {
+      "uuid": "GPU-3905de69-0cb8-64ed-bdbd-22a57c08dac3",
+      "pci": "00000000:41:00.0",
+      "memory": 0,
+      "utilization": 0
+    }
+  },
+  "scheduler": "NodeName=gpu-01 Arch=x86_64 CoresPerSocket=64  CPUAlloc=16 CPUEfctv=128 CPUTot=128 CPULoad=5.95 AvailableFeatures=(null) ActiveFeatures=(null) Gres=gpu:nvidia-rtx-5000-ada-generation:8 GresDrain=N/A GresUsed=gpu:nvidia-rtx-5000-ada-generation:1(IDX:0) NodeAddr=gpu-01 NodeHostName=gpu-01 Version=25.05.6 OS=Linux 6.12.95-ql-generic-14-12 #1 SMP PREEMPT_DYNAMIC Sat Jul  4 20:37:20 UTC 2026  RealMemory=772633 AllocMem=81920 FreeMem=137306 Sockets=2 Boards=1 MemSpecLimit=4096 State=MIXED ThreadsPerCore=1 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A Partitions=gpu  BootTime=2026-10-19T10:28:54 SlurmdStartTime=2026-10-19T10:30:29 LastBusyTime=2026-10-22T18:25:47 ResumeAfterTime=None CfgTRES=cpu=128,mem=772633M,billing=128,gres/gpu=8 AllocTRES=cpu=16,mem=80G,gres/gpu=1 CurrentWatts=0 AveWatts=0\n",
+  "command": [
+    "<local-home>/agent_memory/amemgym_hierarchy/serve-venv/bin/vllm",
+    "serve",
+    "<local-home>/agent_memory/amemgym_hierarchy/models/hf/hub/models--Qwen--Qwen3.8-27B-FP8/snapshots/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a",
+    "--served-model-name",
+    "Qwen/Qwen3.8-27B-FP8",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8127",
+    "--dtype",
+    "bfloat16",
+    "--tensor-parallel-size",
+    "2",
+    "--max-model-len",
+    "32768",
+    "--max-num-seqs",
+    "2",
+    "--gpu-memory-utilization",
+    "0.85",
+    "--enforce-eager",
+    "--disable-custom-all-reduce",
+    "--reasoning-parser",
+    "qwen3"
+  ],
+  "config": {
+    "model": "Qwen/Qwen3.8-27B-FP8",
+    "model_revision": "017b9c7af6b5689d5dd426a76e0bc077eb5ca20a",
+    "base_url": "http://127.0.0.1:8127/v1",
+    "tokenizer": "<local-home>/agent_memory/amemgym_hierarchy/models/hf/hub/models--Qwen--Qwen3.8-27B-FP8/snapshots/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a",
+    "embedding_model": "<local-home>/.cache/huggingface/hub/models--sentence-transformers--all-mpnet-base-v2/snapshots/TO_RESOLVE",
+    "context_tokens": 32768,
+    "max_output_tokens": 8192,
+    "thinking": true,
+    "temperature": 0.6,
+    "timeout_seconds": 1800
+  }
+}

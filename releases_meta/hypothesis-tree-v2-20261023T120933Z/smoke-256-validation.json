@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "purpose": "isolated real-Qwen v2 smoke; not campaign evidence",
+  "campaign": "${REPO_ROOT}/releases/hypothesis-tree-v2-20261023T120933Z/runs/real-qwen-smoke-256",
+  "seconds": 4548.530910253525,
+  "papers": [
+    {
+      "node": "N48211eb6e58e6f8a",
+      "title": "Terminal primary amine as a positive score contributor: refuted by amine upgrade and removal",
+      "sha": "a325f0fdd09cf6219ef9233dfbc5e97556c87c7d",
+      "support": "refuted",
+      "objective_outcome": "decreased",
+      "best_score": 0.33746064889518523
+    },
+    {
+      "node": "N0c05b43f5289a00a",
+      "title": "2-chlorophenyl halogen contribution test: bromine vs halogen-free variants",
+      "sha": "bce84329afe07944509889243500e1902ff08c80",
+      "support": "refuted",
+      "objective_outcome": "decreased",
+      "best_score": 0.3402480510783928
+    }
+  ],
+  "qwen_calls": 15,
+  "max_total_tokens": 25674,
+  "truncated_calls": 0,
+  "rollover": {
+    "expansion": "Xa8bbe7f04df1b3e3",
+    "phase_after": "PARENT_SELECTED",
+    "rollovers": 1
+  },
+  "repairs": 0,
+  "matrix": {
+    "cells_planned": 4,
+    "cells_completed": 4,
+    "scored": 4,
+    "cached": 0,
+    "invalid": 0,
+    "matrix_batches_evaluated": 2,
+    "actual_scoring_invocations": 5
+  },
+  "tree": {
+    "nodes": 3,
+    "edges": 2,
+    "leaves": 2,
+    "max_depth": 1,
+    "branch_points": 1,
+    "out_degree": {
+      "Na836a77851078745": 2
+    }
+  },
+  "source_identity": {
+    "__init__.py": "962fcbcaa233e1c879cb0d8a47971a08ce019f4da0133530af0ece9e99a191fd",
+    "__main__.py": "2d40344bb4a281f13aa36d82e88a360936316593255adc738048f54ac955de6a",
+    "engine.py": "6bcbebc779e1ced9b9ed9ea543474c975b0c7d672f94356fd5bcb6e834cd9dc8",
+    "model.py": "d901f2e5683f196cf4cc0164b73725cbeb052649f07e87fdf7d96b910494c6e7",
+    "oracle.py": "7ddc3277092838d7eab95a410bfeafd4747d860bf8752989173d446cada64363",
+    "prompts.py": "efebd5cc9c3bee4977b5fb58fa62f49d563e90ecfebcef06ddf1effbe763a547",
+    "recovery.py": "a0750571b1a5d4ac468b4217cba32846d925ad37b346a538f590fb3a1b65f385",
+    "search.py": "ebeb3fc1d70e5e3a6963ec6d946edabcc587c294f38423f1166fcf0dbf789a32",
+    "stats.py": "e5b871386fc839ee9f96db846b7a697271e3ddfa10793bbe3d3c3d724bc5d9f8",
+    "store.py": "ab58a8e961aa83241155e831428ec9f00c8b7f2dc9cb32d1ffa3162fc24b5864"
+  },
+  "config": {
+    "model": "Qwen/Qwen3.8-27B-FP8",
+    "model_revision": "017b9c7af6b5689d5dd426a76e0bc077eb5ca20a",
+    "base_url": "http://127.0.0.1:8127/v1",
+    "tokenizer": "<local-home>/agent_memory/amemgym_hierarchy/models/hf/hub/models--Qwen--Qwen3.8-27B-FP8/snapshots/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a",
+    "embedding_model": "${REPO_ROOT}/models/hf/models--sentence-transformers--all-mpnet-base-v2/snapshots/e8c3b32edf5434bc2275fc9bab85f82640a19130",
+    "context_tokens": 32768,
+    "thinking": true,
+    "temperature": 0.6,
+    "timeout_seconds": 7200,
+    "embedding_revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+    "generation_reserve_tokens": 8192
+  }
+}

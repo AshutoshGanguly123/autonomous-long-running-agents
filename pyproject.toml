@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tree-ai-scientist"
+version = "0.1.0"
+description = "Git-backed molecular experiment papers and autonomous Qwen ReAct research"
+requires-python = ">=3.10"
+dependencies = ["numpy", "rdkit", "transformers==4.57.6", "tokenizers==0.22.2", "huggingface-hub==0.36.2", "sentence-transformers==5.1.2"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["tree_ai_scientist*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

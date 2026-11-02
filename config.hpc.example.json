@@ -1,0 +1,13 @@
+{
+  "model": "Qwen/Qwen3.8-27B-FP8",
+  "model_revision": "017b9c7af6b5689d5dd426a76e0bc077eb5ca20a",
+  "base_url": "http://127.0.0.1:8127/v1",
+  "tokenizer": "<redacted-local-path>",
+  "embedding_model": "<redacted-local-path>",
+  "context_tokens": 32768,
+  "thinking": true,
+  "temperature": 0.6,
+  "timeout_seconds": 7200,
+  "embedding_revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+  "generation_reserve_tokens": 8192
+}

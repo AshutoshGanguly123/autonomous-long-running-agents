@@ -1,0 +1,31 @@
+{
+  "launched": "2026-10-23T21:44:16+04:00",
+  "host": "gpu-01",
+  "tmux_model": "tree-scientist-nothink-model",
+  "tmux_campaign": "tree-scientist-v2-nothink",
+  "supervisor_pid": 2350496,
+  "campaign": "${REPO_ROOT}/runs/campaign-v2-nothink-20261023T174117Z",
+  "release": "${REPO_ROOT}/releases/hypothesis-tree-v2-20261023T120933Z",
+  "config": "${REPO_ROOT}/ops/config-v2-nothink.json",
+  "difference_from_live_campaign": "thinking false; separate endpoint and ledger. Same model, temperature, context, protocol, and seed.",
+  "seed": {
+    "smiles": "CCOC(=O)C1=C(COCCN)NC(C)=C(C(=O)OC)C1c1ccccc1Cl",
+    "score": 0.36787944117144233,
+    "root": "Na836a77851078745",
+    "sha": "544e575dd317e7992c5bb56ed1514c606b39f7e1"
+  },
+  "gpus": {
+    "node": "gpu-01",
+    "indices": [
+      3,
+      4
+    ],
+    "tensor_parallel": 2
+  },
+  "endpoint": "http://127.0.0.1:8128/v1",
+  "dashboard": "http://127.0.0.1:8767/",
+  "model": "Qwen/Qwen3.8-27B-FP8",
+  "thinking": false,
+  "stop": "touch runs/campaign-v2-nothink-20261023T174117Z/STOP",
+  "log": "runs/campaign-v2-nothink-20261023T174117Z.log"
+}

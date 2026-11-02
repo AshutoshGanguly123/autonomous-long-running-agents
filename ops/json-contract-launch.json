@@ -1,0 +1,78 @@
+[
+  {
+    "time": 1792782773.6752822,
+    "campaign": "${REPO_ROOT}/runs/campaign-v2-20261023T154100Z",
+    "thinking": true,
+    "release": "${REPO_ROOT}/releases/json-contract-20261023T185645Z",
+    "tmux": "tree-scientist-v2",
+    "supervisor_pid": 3104384,
+    "command": [
+      "${REPO_ROOT}/.venv/bin/python",
+      "${REPO_ROOT}/releases/json-contract-20261023T185645Z/ops/supervise_campaign.py",
+      "--campaign",
+      "${REPO_ROOT}/runs/campaign-v2-20261023T154100Z",
+      "--",
+      "${REPO_ROOT}/.venv/bin/python",
+      "-m",
+      "tree_ai_scientist",
+      "run",
+      "--campaign",
+      "${REPO_ROOT}/runs/campaign-v2-20261023T154100Z"
+    ],
+    "prompt_revision": "json-actions-v1",
+    "preserved_scientific_fingerprint": "36b15dd137d971b86cf8af4223f816af97f2f0b8ae9804690359f16f47230f08",
+    "model_config": {
+      "base_url": "http://127.0.0.1:8127/v1",
+      "context_tokens": 32768,
+      "embedding_model": "${REPO_ROOT}/models/hf/models--sentence-transformers--all-mpnet-base-v2/snapshots/e8c3b32edf5434bc2275fc9bab85f82640a19130",
+      "embedding_revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+      "generation_reserve_tokens": 8192,
+      "model": "Qwen/Qwen3.8-27B-FP8",
+      "model_revision": "017b9c7af6b5689d5dd426a76e0bc077eb5ca20a",
+      "temperature": 0.6,
+      "thinking": true,
+      "timeout_seconds": 7200,
+      "tokenizer": "<local-home>/agent_memory/amemgym_hierarchy/models/hf/hub/models--Qwen--Qwen3.8-27B-FP8/snapshots/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a"
+    },
+    "migration_backup": "${REPO_ROOT}/runs/campaign-v2-20261023T154100Z/maintenance/json-actions-v1",
+    "not_a_fresh_scientific_replicate": true
+  },
+  {
+    "time": 1792782773.798935,
+    "campaign": "${REPO_ROOT}/runs/campaign-v2-nothink-20261023T174117Z",
+    "thinking": false,
+    "release": "${REPO_ROOT}/releases/json-contract-20261023T185645Z",
+    "tmux": "tree-scientist-v2-nothink",
+    "supervisor_pid": 3104390,
+    "command": [
+      "${REPO_ROOT}/.venv/bin/python",
+      "${REPO_ROOT}/releases/json-contract-20261023T185645Z/ops/supervise_campaign.py",
+      "--campaign",
+      "${REPO_ROOT}/runs/campaign-v2-nothink-20261023T174117Z",
+      "--",
+      "${REPO_ROOT}/.venv/bin/python",
+      "-m",
+      "tree_ai_scientist",
+      "run",
+      "--campaign",
+      "${REPO_ROOT}/runs/campaign-v2-nothink-20261023T174117Z"
+    ],
+    "prompt_revision": "json-actions-v1",
+    "preserved_scientific_fingerprint": "aed31a65c544d74e4fd9251f851a3eb0462b0027c62350e848d3c1ff78fc2528",
+    "model_config": {
+      "base_url": "http://127.0.0.1:8128/v1",
+      "context_tokens": 32768,
+      "embedding_model": "${REPO_ROOT}/models/hf/models--sentence-transformers--all-mpnet-base-v2/snapshots/e8c3b32edf5434bc2275fc9bab85f82640a19130",
+      "embedding_revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+      "generation_reserve_tokens": 8192,
+      "model": "Qwen/Qwen3.8-27B-FP8",
+      "model_revision": "017b9c7af6b5689d5dd426a76e0bc077eb5ca20a",
+      "temperature": 0.6,
+      "thinking": false,
+      "timeout_seconds": 7200,
+      "tokenizer": "<local-home>/agent_memory/amemgym_hierarchy/models/hf/hub/models--Qwen--Qwen3.8-27B-FP8/snapshots/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a"
+    },
+    "migration_backup": "${REPO_ROOT}/runs/campaign-v2-nothink-20261023T174117Z/maintenance/json-actions-v1",
+    "not_a_fresh_scientific_replicate": true
+  }
+]
